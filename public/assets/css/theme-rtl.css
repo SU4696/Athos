@@ -4763,6 +4763,7 @@ fieldset:disabled .btn {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav-justified > .nav-link,
@@ -4773,6 +4774,7 @@ fieldset:disabled .btn {
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .tab-content > .tab-pane {
@@ -4800,6 +4802,7 @@ fieldset:disabled .btn {
   padding-left: 1rem;
   padding-bottom: 0.5rem;
   padding-right: 1rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar > .container,
@@ -9431,6 +9434,7 @@ fieldset:disabled .btn {
 
 .fw-medium {
   font-weight: 500 !important;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 .fw-semi-bold {
