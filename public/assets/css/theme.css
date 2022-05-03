@@ -639,12 +639,18 @@ progress {
 }
 
 .img-fluid {
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
   margin: 10%;
 }
 .img-fluid2 {
-  max-width: 60%;
+  max-width: 75%;
+  height: auto;
+  margin: 10%;
+}
+
+.img-fluid3 {
+  max-width: 85%;
   height: auto;
   margin: 10%;
 }
@@ -9201,6 +9207,7 @@ fieldset:disabled .btn {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+
 }
 
 .py-6 {
@@ -9642,7 +9649,7 @@ fieldset:disabled .btn {
 }
 
 .bg-200 {
-  background-color: #F8F8F8 !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .bg-300 {
@@ -9890,8 +9897,8 @@ fieldset:disabled .btn {
 }
 
 .opacity-25 {
-  opacity: 0.25 !important;
-
+  opacity: 0.70 !important;
+  color: #28AFAF !important;
 }
 
 .opacity-50 {
