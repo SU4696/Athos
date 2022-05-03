@@ -144,6 +144,25 @@ p {
   margin-bottom: 1rem;
 }
 
+.cuadritos{
+  border-radius: 15px;
+  background-color: #03A6A6;
+  width: 5 px !important;
+  height: 200px;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  float: center;
+}
+
+.Puestos{
+  color: #fff;background-;
+}
+
+botones{
+  
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   text-decoration: underline;
@@ -9849,6 +9868,7 @@ fieldset:disabled .btn {
 
 .opacity-25 {
   opacity: 0.25 !important;
+
 }
 
 .opacity-50 {
@@ -9908,7 +9928,7 @@ fieldset:disabled .btn {
 }
 
 .text-400 {
-  color: #7a839e !important;
+  color: #7a83rgb9e !important;
 }
 
 .text-500 {
