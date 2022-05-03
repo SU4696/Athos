@@ -147,7 +147,7 @@ p {
 .cuadritos{
   border-radius: 15px;
   background-color: #28AFAF;
-  width: 300px !important;
+  width: 250px !important;
   height: 300px;
   flex-direction: column;
   float: center;
@@ -163,8 +163,8 @@ p {
 }
 
 .boton {
-    min-width: 110px;
-    height: 40px;
+    min-width: 90px;
+    height: 37px;
     color: rgb(0, 0, 0);
     padding: 5px 10px;
     cursor: pointer;
@@ -183,9 +183,7 @@ p {
   display: grid;
   gap: 70px;
   grid-template-columns: repeat(3, 1fr);
-
-
-
+  background-color: #ffffff;
 }
 
 abbr[title],
