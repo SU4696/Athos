@@ -500,6 +500,12 @@ button:not(:disabled),
     flex: 0 0 auto;
     width: 33.33333%;
   }
+  .col-sm-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 40%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -523,6 +529,12 @@ button:not(:disabled),
     flex: 0 0 auto;
     width: 70%;
     padding: 5%;
+  }
+  .col-md-71 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 60%;
   }
 }
 
@@ -550,11 +562,19 @@ button:not(:disabled),
     flex: 0 0 auto;
     width: 40%;
   }
+  
   .col-lg-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: 60%;
+  }
+  .col-lg-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 65%;
+
   }
 }
 
