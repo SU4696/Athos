@@ -66,6 +66,29 @@
             </div>
           </div>
         </nav>
+        <section>
+            <div class="container ">
+                <div class="row flex-center" >
+                    <div class=" roundbox flex-center" >
+                    <div class="col-sm-6  " style="float: right;"><img class="img-fluid"
+                        src="../assets/img/illustrations/2.png"
+                        alt=""  style="opacity: 0.6;"/>
+                    </div>
+                    <div class="col-md-71 col-lg-7 mt-5 text-center text-md-start " >
+                            <h1 class="fw-medium"><span style="color:white; text-shadow: 20px black;"
+                                style="font-family: Raleway;">Queremos conocerte</span>
+                            </h1>
+                            <p class="mt-3 mb-4" style="color:white">Access the platform to be able to enter
+                            your personal data and carry out a unique interview. </p>
+                    </div>
+                </div>
+                        
+                    
+
+                </div>
+            </div>
+        </section>
+        
 
         
       
@@ -75,7 +98,37 @@
     <!-- ===============================================-->
 
 
+    <!-- ===============================================-->
+    <!--    Style-->
+    <!-- ===============================================-->
+    <style>
+        .roundbox{
+            padding-left: 5%;
+            padding-bottom: 10%;
+            padding-right: 0%;
+            height: 250px; 
+            position: relative;
+            width: 90%;
+            z-index: 1;
+            
+        }
+        .roundbox::after {
+            height: 250px; 
+            content: "";
+            background-size: cover;
+            opacity: 0.8;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            border-radius: 25px;
+            background-image: linear-gradient(to right, #03A6A6, #048bc9);
+            z-index: -1;
+        }
+       
 
+    </style>
 
     <!-- ===============================================-->
     <!--    JavaScripts-->
