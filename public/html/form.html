@@ -51,6 +51,15 @@
     <section>
       <div class="container center">
         <div class="row roundbox ">
+          <div class="column2">
+            <div class="text responsive-font-example">
+            <h2 class="titletext" >Queremos conocerte</h2>
+          <p class="ptext" >Llena los siguientes datos para que podamos crear tu CV y compartirlo con nuestros reclutadores.  </p>
+          </div>
+        </div>
+          <div class="column3">
+            <img src="../assets/img/illustrations/2.png" class="img1" >
+          </div>
         </div>
       </div>
     </section>
@@ -65,18 +74,26 @@
 
     <section>
       <div class="container">
-        <div class="col">
-          <h4>Datos Personales</h4>
-          <br>
-          <h5>Nombre</h5>
-          <input id="nombre" class="dpstyle" type="text" placeholder="Nombre">
-          <h5>Apellido Paterno</h5>
-          <input id="ApellidoPaterno" class="dpstyle" type="text" placeholder="Apellido">
-          <h5>Apellido Materno</h5>
-          <input id="ApellidoMaterno" class="dpstyle" type="text" placeholder="Apellido">
-          <h5>Fecha de Nacimiento</h5>
-          <input id="FechaDeNacimiento" class="dpstyle" type="date">
-        </div>
+        <div class="row">
+          <div class="column">
+            <h4>Datos Personales</h4>
+            <br>
+            <h5>Nombre</h5>
+            <input id="nombre" class="dpstyle" type="text" placeholder="Nombre">
+            <h5>Apellido Paterno</h5>
+            <input id="ApellidoPaterno" class="dpstyle" type="text" placeholder="Apellido">
+            <h5>Apellido Materno</h5>
+            <input id="ApellidoMaterno" class="dpstyle" type="text" placeholder="Apellido">
+            <h5>Fecha de Nacimiento</h5>
+            <input id="FechaDeNacimiento" class="dpstyle" type="date">
+          </div>
+          <div class="column perfilimgstyle"  >
+            <input type=file name='file1' style='display: none;'>
+           <img src="../assets/img/illustrations/3.png" width="60%" alt="perfilimg"onclick='document.all.file1.click(); document.all.file2.value=document.all.file1.value'>
+            <h5 class="subir">Sube tu foto</h5>
+          </div>
+
+       </div>
       </div>
     </section>
 
@@ -84,7 +101,8 @@
 
     <section>
       <div class="container">
-        <div class="col">
+        <div class="row">
+        <div class="column">
           <h4>Información de Contacto</h4>
           <br>
           <h5>Correo</h5>
@@ -94,15 +112,7 @@
           <h5>Dirección</h5>
           <input id="direccion" class="dpstyle" type="text" placeholder="Dirección">
         </div>
-      </div>
-      
-    </section>
-
-    <br>
-
-    <section>
-      <div class="container">
-        <div class="col">
+        <div class="column">
           <h4>Formación Académica</h4>
           <br>
           <h5>Carrera</h5>
@@ -118,13 +128,17 @@
           <input id="añofin" class="dpstyle" type="date">
         </div>
       </div>
+    </div>
+      
     </section>
 
     <br>
 
+   
+
     <section>
       <div class="container">
-        <div class="col">
+        <div class="column">
           <h4>Experiencia Laboral</h4>
           <br>
           <h5>Título del puesto</h5>
@@ -146,7 +160,8 @@
 
     <section>
       <div class="container">
-        <div class="col ">
+        <div class="row"></div>
+        <div class="column ">
           <form>
             <h4>Idiomas</h4>
             <br>
@@ -156,13 +171,15 @@
           </form>
         </div>
       </div>
+    </div>
     </section>
 
     <br>
 
     <section>
       <div class="container">
-        <div class="col">
+        <div class="row">
+        <div class="column">
 
           <form>
             <h4>Skills</h4>
@@ -173,6 +190,7 @@
           </form>
         </div>
       </div>
+    </div>
     </section>
     <br>
 
@@ -201,6 +219,47 @@
   <!--    Style-->
   <!-- ===============================================-->
   <style>
+    .titletext{
+      font-size: 5vmax;
+      }
+
+      .ptext{
+        line-height: 4vmax;
+      }
+          
+    .text{
+      vertical-align: bottom;
+      color:white; 
+      font-family: Raleway;
+      width: 100%;
+      height: auto;
+    }
+    .img1{
+      width: 90%;
+      height: auto;
+    }
+    .perfilimgstyle{
+      text-align: center;
+    }
+    .subir{
+      margin: 1rem;
+    }
+    .column2 {
+      padding:2rem;
+      float: left;
+      width: 65%;
+    }
+    .column3 {
+      padding: 2rem;
+      text-align: center;
+      float: left;
+      width:35%;
+    }
+    .column {
+      padding:1rem;
+      float: left;
+      width: 50%;
+    }
     .roundbox {
       margin-top: 3rem;
       margin-bottom: 2rem;
@@ -233,7 +292,7 @@
     }
 
     .dpstyle {
-      width: 50%;
+      width: 90%;
       border-top: none;
       border-right: none;
       border-left: none;
