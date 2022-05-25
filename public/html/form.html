@@ -53,12 +53,13 @@
         <div class="row roundbox ">
           <div class="column2">
             <div class="text responsive-font-example">
-            <h2 class="titletext" >Queremos conocerte</h2>
-          <p class="ptext" >Llena los siguientes datos para que podamos crear tu CV y compartirlo con nuestros reclutadores.  </p>
+              <h2 class="titletext">Queremos conocerte</h2>
+              <p class="ptext">Llena los siguientes datos para que podamos crear tu CV y compartirlo con nuestros
+                reclutadores. </p>
+            </div>
           </div>
-        </div>
           <div class="column3">
-            <img src="../assets/img/illustrations/2.png" class="img1" >
+            <img src="../assets/img/illustrations/2.png" class="img1">
           </div>
         </div>
       </div>
@@ -79,21 +80,21 @@
             <h4>Datos Personales</h4>
             <br>
             <h5>Nombre</h5>
-            <input id="nombre" class="dpstyle" type="text" placeholder="Nombre">
+            <input id="nombre" class="dpstyle" type="text" placeholder="Nombre" required>
             <h5>Apellido Paterno</h5>
-            <input id="ApellidoPaterno" class="dpstyle" type="text" placeholder="Apellido">
+            <input id="ApellidoPaterno" class="dpstyle" type="text" placeholder="Apellido" required>
             <h5>Apellido Materno</h5>
-            <input id="ApellidoMaterno" class="dpstyle" type="text" placeholder="Apellido">
+            <input id="ApellidoMaterno" class="dpstyle" type="text" placeholder="Apellido" required>
             <h5>Fecha de Nacimiento</h5>
-            <input id="FechaDeNacimiento" class="dpstyle" type="date">
+            <input id="FechaDeNacimiento" class="dpstyle" type="date" required>
           </div>
-          <div class="column perfilimgstyle"  >
+          <div class="column perfilimgstyle">
             <input type=file name='file1' style='display: none;'>
-           <img src="../assets/img/illustrations/3.png" width="60%" alt="perfilimg"onclick='document.all.file1.click(); document.all.file2.value=document.all.file1.value'>
+            <img src="../assets/img/illustrations/3.png" width="60%" alt="perfilimg"
+              onclick='document.all.file1.click(); document.all.file2.value=document.all.file1.value'>
             <h5 class="subir">Sube tu foto</h5>
           </div>
-
-       </div>
+        </div>
       </div>
     </section>
 
@@ -102,76 +103,70 @@
     <section>
       <div class="container">
         <div class="row">
-        <div class="column">
-          <h4>Información de Contacto</h4>
-          <br>
-          <h5>Correo</h5>
-          <input id="correo" class="dpstyle" type="email" placeholder="Email">
-          <h5>Teléfono</h5>
-          <input id="telefono" class="dpstyle" type="tel" placeholder="Teléfono">
-          <h5>Dirección</h5>
-          <input id="direccion" class="dpstyle" type="text" placeholder="Dirección">
-        </div>
-        <div class="column">
-          <h4>Formación Académica</h4>
-          <br>
-          <h5>Carrera</h5>
-          <input id="carrera" class="dpstyle" type="text" placeholder="Carrera">
-
-          <h5>Universidad</h5>
-          <input id="universidad" class="dpstyle" type="text" placeholder="Universidad">
-
-          <h5>Fecha inicio</h5>
-          <input id="añoin" class="dpstyle" type="date">
-
-          <h5>Fecha fin</h5>
-          <input id="añofin" class="dpstyle" type="date">
-        </div>
-      </div>
-    </div>
-      
-    </section>
-
-    <br>
-
-   
-
-    <section>
-      <div class="container">
-        <div class="column">
-          <h4>Experiencia Laboral</h4>
-          <br>
-          <h5>Título del puesto</h5>
-          <input id="puesto" class="dpstyle" type="text" placeholder="Puesto">
-
-          <h5>Descripción del puesto</h5>
-          <input id="universidad" class="dpstyle" type="text" placeholder="Descripción">
-
-          <h5>Fecha inicio</h5>
-          <input id="añoin" class="dpstyle" type="date">
-
-          <h5>Fecha fin</h5>
-          <input id="añofin" class="dpstyle" type="date">
-        </div>
-      </div>
-    </section>
-
-    <br>
-
-    <section>
-      <div class="container">
-        <div class="row"></div>
-        <div class="column ">
-          <form>
-            <h4>Idiomas</h4>
+          <div class="column">
+            <h4>Información de Contacto</h4>
             <br>
-            <h5>Ingresa los idiomas que quieras agregar</h5>
-            <label for="idioma"> <input class="dpstyle" placeholder="Ingles"> </label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-          </form>
+            <h5>Correo</h5>
+            <input id="correo" class="dpstyle" type="email" placeholder="Email">
+            <h5>Teléfono</h5>
+            <input id="telefono" class="dpstyle" type="tel" placeholder="Teléfono">
+            <h5>Dirección</h5>
+            <input id="direccion" class="dpstyle" type="text" placeholder="Dirección">
+          </div>
+          <div class="column">
+            <h4>Formación Académica</h4>
+            <br>
+            <h5>Carrera</h5>
+            <input id="carrera" class="dpstyle" type="text" placeholder="Carrera">
+
+            <h5>Universidad</h5>
+            <input id="universidad" class="dpstyle" type="text" placeholder="Universidad">
+
+            <h5>Fecha inicio</h5>
+            <input id="añoin" class="dpstyle" type="date">
+
+            <h5>Fecha fin</h5>
+            <input id="añofin" class="dpstyle" type="date">
+          </div>
         </div>
       </div>
-    </div>
+
+    </section>
+
+    <br>
+
+
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h4>Experiencia Laboral</h4>
+            <br>
+            <h5>Título del puesto</h5>
+            <input id="puesto" class="dpstyle" type="text" placeholder="Puesto">
+
+            <h5>Descripción del puesto</h5>
+            <input id="universidad" class="dpstyle" type="text" placeholder="Descripción">
+
+            <h5>Fecha inicio</h5>
+            <input id="añoin" class="dpstyle" type="date">
+
+            <h5>Fecha fin</h5>
+            <input id="añofin" class="dpstyle" type="date">
+          </div>
+          <div class="column ">
+            <form>
+              <h4>Idiomas</h4>
+              <br>
+              <h5>Ingresa los idiomas que quieras agregar</h5>
+              <label for="idioma"> <input class="dpstyle" placeholder="Ingles"> </label>
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </form>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <br>
@@ -179,20 +174,30 @@
     <section>
       <div class="container">
         <div class="row">
-        <div class="column">
-
-          <form>
-            <h4>Skills</h4>
-            <br>
-            <h5>Ingresa las skills que quieras agregar</h5>
-            <label for="skill"> <input class="dpstyle" placeholder="Python"> </label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-          </form>
-        </div>
-      </div>
-    </div>
+          <div class="column">
+          </div>
+          <div class="column">
+            <form>
+              <h4>Skills</h4>
+              <br>
+              <h5>Ingresa las skills que quieras agregar</h5>
+              <label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </form>
+            <div class="button">
+              <a href="#" onclick="AgregarCampos();">Agregar Campos</a>
+            </div>
+            <div id="campos">
+            </div>
+          </div>
     </section>
     <br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <div class="button">
+      <a href="#" onclick="AgregarCampos();">Agregar Campos</a>
+    </div>
+    <div id="campos">
 
 
 
@@ -219,47 +224,54 @@
   <!--    Style-->
   <!-- ===============================================-->
   <style>
-    .titletext{
+    .titletext {
       font-size: 5vmax;
-      }
+    }
 
-      .ptext{
-        line-height: 4vmax;
-      }
-          
-    .text{
+    .ptext {
+      line-height: 4vmax;
+    }
+
+    .text {
       vertical-align: bottom;
-      color:white; 
+      color: white;
       font-family: Raleway;
       width: 100%;
       height: auto;
     }
-    .img1{
+
+    .img1 {
       width: 90%;
       height: auto;
     }
-    .perfilimgstyle{
+
+    .perfilimgstyle {
       text-align: center;
     }
-    .subir{
+
+    .subir {
       margin: 1rem;
     }
+
     .column2 {
-      padding:2rem;
+      padding: 2rem;
       float: left;
       width: 65%;
     }
+
     .column3 {
       padding: 2rem;
       text-align: center;
       float: left;
-      width:35%;
+      width: 35%;
     }
+
     .column {
-      padding:1rem;
+      padding: 1rem;
       float: left;
       width: 50%;
     }
+
     .roundbox {
       margin-top: 3rem;
       margin-bottom: 2rem;
@@ -345,6 +357,15 @@
     crossorigin="anonymous"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script> var nextinput = 0;
+    function AgregarCampos() {
+      nextinput++;
+      campo = '<li id="rut' + nextinput + '">Campo:<input type="range" min="1" max="100" value="50" class="slider" id="myRange"' + nextinput + '"&nbsp; name="campo' + nextinput + '"&nbsp; /></li>';
+      $("#campos").append(campo);
+    }</script>
+
+<label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
+
 
 
   <link
