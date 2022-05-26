@@ -188,8 +188,8 @@
               <label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
               <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </form>
-            <form id="skill" method="post"></form>
-            <button type="submit" name="newslider" onclick="CreateNewSkill();">Agregar Skill</button>
+            <form id="skill" method="post" ></form> <form id = "skillslider" method="post"></form>
+            <button type="submit" name="new" onclick="CreateNewSkill();" type = "submit" name ="newslider" onclick = "CreateNewSkillSlider();">Agregar Skill</button>
           </div>
         </div>
       </div>
@@ -399,7 +399,7 @@
     document.getElementById("skill").appendChild(DOMHeadingOne);
     }
 
-    function CreateNewSkill() {
+    function CreateNewSkillSlider() {
     var DOMHeadingOne = document.createElement("input");
     DOMHeadingOne.setAttribute("type", "range");
     DOMHeadingOne.setAttribute("min", "1");
@@ -407,9 +407,10 @@
     DOMHeadingOne.setAttribute("value", "50");
     DOMHeadingOne.setAttribute("class", "slider");
     DOMHeadingOne.setAttribute("id", "MyRange");
-    DOMHeadingOne.classList.add("newsalider");
-    document.getElementById("skill").appendChild(DOMHeadingOne);
+    DOMHeadingOne.classList.add("newslider");
+    document.getElementById("skillslider").appendChild(DOMHeadingOne);
     }
+    
 
     function CreateNewIdioma() {
     var DOMHeadingOne = document.createElement("input");
