@@ -159,6 +159,9 @@
 
             <h5>Fecha fin</h5>
             <input id="añofin" class="dpstyle" type="date">
+            <br>
+            <h5>Puesto Deseado</h5>
+            <input id="puestodesado" class="dpstyle" type="text" placeholder="Puesto">
           </div>
         </div>
       </div>
@@ -172,9 +175,9 @@
           <div class="column ">
             <form>
               <h4>Idiomas</h4>
-              <br>
+              <br>  
               <h5>Ingresa los idiomas que quieras agregar</h5>
-              <label for="idioma"> <input class="dpstyle" placeholder="Ingles"> </label>
+              <label for="idioma"> <input class="dpstyle" placeholder="Idioma"> </label>
               <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </form>
             <form id="idioma" method="post"></form>
@@ -188,8 +191,8 @@
               <label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
               <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </form>
-            <form id="skill" method="post" ></form> <form id = "skillslider" method="post"></form>
-            <button type="submit" name="new" onclick="CreateNewSkill();" type = "submit" name ="newslider" onclick = "CreateNewSkillSlider();">Agregar Skill</button>
+            <form id="skill" method="post" ></form>
+            <button type="submit" name="new" onclick="CreateNewSkill();">Agregar Skill</button>
           </div>
         </div>
       </div>
