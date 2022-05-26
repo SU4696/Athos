@@ -51,21 +51,21 @@
     <section>
       <div class="container center">
         <div class="row roundbox ">
-          
+
           <div class="column2 text ">
-            
-              <h2 class="titletext">Queremos conocerte</h2>
-              <p class="ptext">Llena los siguientes datos para que podamos crear tu CV y compartirlo con nuestros
-                reclutadores. </p>
-            
+
+            <h2 class="titletext">Queremos conocerte</h2>
+            <p class="ptext">Llena los siguientes datos para que podamos crear tu CV y compartirlo con nuestros
+              reclutadores. </p>
+
           </div>
           <div class="column3 ">
             <div class="picbk">
 
             </div>
           </div>
-         
-       
+
+
         </div>
       </div>
     </section>
@@ -160,7 +160,7 @@
             <h5>Fecha fin</h5>
             <input id="añofin" class="dpstyle" type="date">
           </div>
-          
+
 
         </div>
       </div>
@@ -188,46 +188,15 @@
               <label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
               <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </form>
-            <div class="button">
-              <a href="#" onclick="AgregarCampos();">Añadir Skill</a>
-            </div>
-            <div id="campos">
-            </div>
+            <button type="submit" name="e-h1" onclick="CreateNewDom();">Agregar Skill</button>
+            <form id="editor" method="post">
+            </form>
           </div>
-
-          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <form action="" method="post">
-                    <div class="input_fields_wrap">
-        
-                    <button class="add_field_button">Add More Fields</button>
-                    <input type="text" class="form-control mb-3" name="mytext[]" placeholder="Enter Price">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-            <div class="col-md-4"></div>
         </div>
-        
+      </div>
+
     </section>
     <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </main>
   <!-- ===============================================-->
@@ -239,13 +208,12 @@
   <!--    Style-->
   <!-- ===============================================-->
   <style>
-   
     .titletext {
-      font-size:4vw;
+      font-size: 4vw;
     }
 
     .ptext {
-      font-size:1.6vw;
+      font-size: 1.6vw;
     }
 
     .text {
@@ -253,7 +221,7 @@
       font-family: Raleway;
       width: 100%;
       height: auto;
-      
+
 
     }
 
@@ -266,17 +234,18 @@
     }
 
     .column2 {
-      
+
       padding: 2rem;
       float: left;
       width: 75%;
-      
+
     }
+
     .column3 {
       padding: 1rem;
       float: left;
       width: 25%;
-      
+
     }
 
     .column {
@@ -291,10 +260,11 @@
       height: 250px;
       width: 90%;
       border-radius: 25px;
-      background: linear-gradient(to right, rgb(3, 166, 166,0.8), rgb(4, 139, 201,0.8));
+      background: linear-gradient(to right, rgb(3, 166, 166, 0.8), rgb(4, 139, 201, 0.8));
     }
-    .picbk{
-     height: 100%;
+
+    .picbk {
+      height: 100%;
       background-size: contain;
       opacity: 0.8;
       background-repeat: no-repeat;
@@ -376,9 +346,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script>
+    function CreateNewDom() {
+    var DOMHeadingOne = document.createElement("input");
+    DOMHeadingOne.setAttribute("class", "dpstyle");
+    DOMHeadingOne.classList.add("e-h1");
+    document.getElementById("editor").appendChild(DOMHeadingOne);
+    }
+  </script>
 
 
 
