@@ -177,6 +177,8 @@
               <label for="idioma"> <input class="dpstyle" placeholder="Ingles"> </label>
               <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </form>
+            <form id="idioma" method="post"></form>
+            <button type="submit" name="newid" onclick="CreateNewIdioma();">Agregar Idioma</button>
           </div>
           <div class="column">
             <form>
@@ -186,8 +188,8 @@
               <label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
               <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </form>
-            <form id="editor" method="post" ></form> <form id="editor" method="post"></form>
-            <button type="submit" name="new" onclick="CreateNewSkill();">Agregar Skill</button>
+            <form id="skill" method="post"></form>
+            <button type="submit" name="newslider" onclick="CreateNewSkill();">Agregar Skill</button>
           </div>
         </div>
       </div>
@@ -394,12 +396,31 @@
     DOMHeadingOne.setAttribute("class", "dpstyle");
     DOMHeadingOne.setAttribute("placeholder", "Skill");
     DOMHeadingOne.classList.add("new");
-    document.getElementById("editor").appendChild(DOMHeadingOne);
+    document.getElementById("skill").appendChild(DOMHeadingOne);
     }
 
+    function CreateNewSkill() {
+    var DOMHeadingOne = document.createElement("input");
+    DOMHeadingOne.setAttribute("type", "range");
+    DOMHeadingOne.setAttribute("min", "1");
+    DOMHeadingOne.setAttribute("max", "100");
+    DOMHeadingOne.setAttribute("value", "50");
+    DOMHeadingOne.setAttribute("class", "slider");
+    DOMHeadingOne.setAttribute("id", "MyRange");
+    DOMHeadingOne.classList.add("newsalider");
+    document.getElementById("skill").appendChild(DOMHeadingOne);
+    }
+
+    function CreateNewIdioma() {
+    var DOMHeadingOne = document.createElement("input");
+    DOMHeadingOne.setAttribute("class", "dpstyle");
+    DOMHeadingOne.setAttribute("placeholder", "Idioma");
+    DOMHeadingOne.classList.add("newid");
+    document.getElementById("idioma").appendChild(DOMHeadingOne);
+    }
   </script>
 
-
+ 
 
 
   <link
