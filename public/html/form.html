@@ -175,10 +175,11 @@
           <div class="column ">
             <form>
               <h4>Idiomas</h4>
-              <br>  
+              <br>
               <h5>Ingresa los idiomas que quieras agregar</h5>
               <label for="idioma"> <input class="dpstyle" placeholder="Idioma"> </label>
-              <input type="range" min="1" max="100" value="50" class="slider" id="myRange" oninput="rangevalue.value=value">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange"
+                oninput="rangevalue.value=value">
               <output id="rangevalue">50</output>
             </form>
             <form id="idioma" method="post"></form>
@@ -189,13 +190,15 @@
               <h4>Skills</h4>
               <br>
               <form>
-              <h5>Ingresa las skills que quieras agregar</h5>
-              <label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="rangevalue.value=value">
-              <output id="rangevalue">50</output>
-            </form>
-            <form id="skill" method="post" ></form> <form id = "skillslider" method="post"></form>
-            <button type="submit" name="new" onclick="CreateNewSkill();" >Agregar Skill</button>
+                <h5>Ingresa las skills que quieras agregar</h5>
+                <label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
+                <input type="range" min="0" max="100" value="50" class="slider" id="myRange"
+                  oninput="rangevalue.value=value">
+                <output id="rangevalue">50</output>
+              </form>
+              <form id="skill" method="post"></form>
+              <form id="skillslider" method="post"></form>
+              <button type="submit" name="new" onclick="CreateNewSkill();">Agregar Skill</button>
           </div>
         </div>
       </div>
@@ -204,8 +207,8 @@
     <br>
     <section>
       <div class="container ">
-        <div class="row " >
-          <input  type="submit" alt="submit" class="buttonsyle" value="Submit" >
+        <div class="row ">
+          <input type="submit" alt="submit" class="buttonsyle" value="Submit">
         </div>
       </div>
     </section>
@@ -213,7 +216,7 @@
 
     <section>
       <div class="container ">
-        <hr  color="#03A6A6" size="10px"class="outli">
+        <hr color="#03A6A6" size="10px" class="outli">
         <div class="col ">
           <p class="footerd"> © Atos SE 2022 all rights reserved</p>
         </div>
@@ -230,7 +233,7 @@
   <!--    Style-->
   <!-- ===============================================-->
   <style>
-    .buttonsyle{
+    .buttonsyle {
       background-color: #03A6A6;
       color: white;
       width: 15%;
@@ -239,9 +242,10 @@
       font-size: 1.2rem;
       padding: 1%;
       text-align: center;
-      margin:0 auto;
+      margin: 0 auto;
       margin-top: 2rem;
     }
+
     .titletext {
       font-size: 4vw;
     }
@@ -258,14 +262,17 @@
 
 
     }
-    .outli{
+
+    .outli {
       margin-top: 4rem;
     }
-    .footerd{
+
+    .footerd {
       color: #03A6A6;
       text-align: center;
       margin-bottom: 4rem;
     }
+
     .aligncenter {
       text-align: center;
     }
@@ -273,7 +280,8 @@
     .subir {
       margin: 1rem;
     }
-    .column100{
+
+    .column100 {
       padding: 1rem;
       float: left;
       width: 100%;
@@ -398,36 +406,36 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
   <script>
     function CreateNewSkill() {
-    var DOMHeadingOne = document.createElement("input");
-    DOMHeadingOne.setAttribute("class", "dpstyle");
-    DOMHeadingOne.setAttribute("placeholder", "Skill");
-    DOMHeadingOne.classList.add("new");
-    document.getElementById("skill").appendChild(DOMHeadingOne);
+      var DOMHeadingOne = document.createElement("input");
+      DOMHeadingOne.setAttribute("class", "dpstyle");
+      DOMHeadingOne.setAttribute("placeholder", "Skill");
+      DOMHeadingOne.classList.add("new");
+      document.getElementById("skill").appendChild(DOMHeadingOne);
     }
 
     function CreateNewSkillSlider() {
-    var DOMHeadingOne = document.createElement("input");
-    DOMHeadingOne.setAttribute("type", "range");
-    DOMHeadingOne.setAttribute("min", "1");
-    DOMHeadingOne.setAttribute("max", "100");
-    DOMHeadingOne.setAttribute("value", "50");
-    DOMHeadingOne.setAttribute("class", "slider");
-    DOMHeadingOne.setAttribute("id", "MyRange");
-    DOMHeadingOne.classList.add("newslider");
-    document.getElementById("skillslider").appendChild(DOMHeadingOne);
+      var DOMHeadingOne = document.createElement("input");
+      DOMHeadingOne.setAttribute("type", "range");
+      DOMHeadingOne.setAttribute("min", "1");
+      DOMHeadingOne.setAttribute("max", "100");
+      DOMHeadingOne.setAttribute("value", "50");
+      DOMHeadingOne.setAttribute("class", "slider");
+      DOMHeadingOne.setAttribute("id", "MyRange");
+      DOMHeadingOne.classList.add("newslider");
+      document.getElementById("skillslider").appendChild(DOMHeadingOne);
     }
-    
+
 
     function CreateNewIdioma() {
-    var DOMHeadingOne = document.createElement("input");
-    DOMHeadingOne.setAttribute("class", "dpstyle");
-    DOMHeadingOne.setAttribute("placeholder", "Idioma");
-    DOMHeadingOne.classList.add("newid");
-    document.getElementById("idioma").appendChild(DOMHeadingOne);
+      var DOMHeadingOne = document.createElement("input");
+      DOMHeadingOne.setAttribute("class", "dpstyle");
+      DOMHeadingOne.setAttribute("placeholder", "Idioma");
+      DOMHeadingOne.classList.add("newid");
+      document.getElementById("idioma").appendChild(DOMHeadingOne);
     }
   </script>
 
- 
+
 
 
   <link
