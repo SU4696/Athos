@@ -182,8 +182,8 @@
                 oninput="rangevalue.value=value">
               <output id="rangevalue">50</output>
             </form>
-            <form id="idioma" method="post"></form>
-            <button type="submit" name="newid" onclick="CreateNewIdioma();">Agregar Idioma</button>
+            <form id="idioma"></form>
+              <button onclick="CreateNewIdioma();"">Agregar Idioma</button>
           </div>
           <div class="column">
             <form>
@@ -410,23 +410,28 @@
                   oninput="rangevalue.value=value">
                 <output id="rangevalue">50</output>`;
 
+
+
+    const newidioma = `<label for="idioma"> <input class="dpstyle" placeholder="Idioma"> </label>
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange"
+                oninput="rangevalue.value=value">
+              <output id="rangevalue">50</output>`;
+
     
     function CreateNewSkill(){
       var DOMskill = document.getElementById("newskill")
       document.getElementById("skill")
       skill.innerHTML = newskill
       document.getElementById("skill").appendChild(DOMskill);
-
     }
 
-
-    function CreateNewIdioma() {
-      var DOMHeadingOne = document.createElement("input");
-      DOMHeadingOne.setAttribute("class", "dpstyle");
-      DOMHeadingOne.setAttribute("placeholder", "Idioma");
-      DOMHeadingOne.classList.add("newid");
-      document.getElementById("idioma").appendChild(DOMHeadingOne);
+    function CreateNewIdioma(){
+      var DOMidioma = document.getElementById("newidioma")
+      document.getElementById("idioma")
+      idioma.innerHTML = newidioma
+      document.getElementById("idioma").appendChild(DOMidioma);
     }
+
   </script>
 
 
