@@ -196,9 +196,8 @@
                   oninput="rangevalue.value=value">
                 <output id="rangevalue">50</output>
               </form>
-              <form id="skill" method="post"></form>
-              <form id="skillslider" method="post"></form>
-              <button type="submit" name="new" onclick="CreateNewSkill();">Agregar Skill</button>
+              <form id="skill"></form>
+              <button onclick="CreateNewSkill();"">Agregar Skill</button>
           </div>
         </div>
       </div>
@@ -405,24 +404,19 @@
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
   <script>
-    function CreateNewSkill() {
-      var DOMHeadingOne = document.createElement("input");
-      DOMHeadingOne.setAttribute("class", "dpstyle");
-      DOMHeadingOne.setAttribute("placeholder", "Skill");
-      DOMHeadingOne.classList.add("new");
-      document.getElementById("skill").appendChild(DOMHeadingOne);
-    }
 
-    function CreateNewSkillSlider() {
-      var DOMHeadingOne = document.createElement("input");
-      DOMHeadingOne.setAttribute("type", "range");
-      DOMHeadingOne.setAttribute("min", "1");
-      DOMHeadingOne.setAttribute("max", "100");
-      DOMHeadingOne.setAttribute("value", "50");
-      DOMHeadingOne.setAttribute("class", "slider");
-      DOMHeadingOne.setAttribute("id", "MyRange");
-      DOMHeadingOne.classList.add("newslider");
-      document.getElementById("skillslider").appendChild(DOMHeadingOne);
+    const newskill = `<label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
+                <input type="range" min="0" max="100" value="50" class="slider" id="myRange"
+                  oninput="rangevalue.value=value">
+                <output id="rangevalue">50</output>`;
+
+    
+    function CreateNewSkill(){
+      var DOMskill = document.getElementById("newskill")
+      document.getElementById("skill")
+      skill.innerHTML = newskill
+      document.getElementById("skill").appendChild(DOMskill);
+
     }
 
 
