@@ -178,7 +178,8 @@
               <br>  
               <h5>Ingresa los idiomas que quieras agregar</h5>
               <label for="idioma"> <input class="dpstyle" placeholder="Idioma"> </label>
-              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange" oninput="rangevalue.value=value">
+              <output id="rangevalue">50</output>
             </form>
             <form id="idioma" method="post"></form>
             <button type="submit" name="newid" onclick="CreateNewIdioma();">Agregar Idioma</button>
@@ -187,12 +188,14 @@
             <form>
               <h4>Skills</h4>
               <br>
+              <form>
               <h5>Ingresa las skills que quieras agregar</h5>
               <label for="skill"> <input class="dpstyle" placeholder="Skill"> </label>
-              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="rangevalue.value=value">
+              <output id="rangevalue">50</output>
             </form>
-            <form id="skill" method="post" ></form>
-            <button type="submit" name="new" onclick="CreateNewSkill();">Agregar Skill</button>
+            <form id="skill" method="post" ></form> <form id = "skillslider" method="post"></form>
+            <button type="submit" name="new" onclick="CreateNewSkill();" >Agregar Skill</button>
           </div>
         </div>
       </div>
@@ -349,12 +352,12 @@
 
     .slider {
       -webkit-appearance: none;
-      width: 15%;
+      width: 20%;
       height: 10px;
       border-radius: 5px;
       background: #d3d3d3;
       outline: none;
-      opacity: 0.7;
+      opacity: 0.9;
       -webkit-transition: .2s;
       transition: opacity .2s;
     }
