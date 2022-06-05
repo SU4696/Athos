@@ -10,7 +10,7 @@
   <!-- ===============================================-->
   <!--    Document Title-->
   <!-- ===============================================-->
-  <title>Form</title>
+  <title>Perfil</title>
 
 
   <!-- ===============================================-->
@@ -49,32 +49,9 @@
               <div class="row">
                 <div class="column100" >
                     <br>
-                        <div style="float: left;">
-                        <h3>Filtro</h3>
-                        </div>
-                       
-                  </div>
-                       
-                  <div class="column101" >
-                      <div class="buttonarea"style="float: left;">
-                          <h4>Puesto:</h4>
-                          <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle buttonsyle" type="button" data-toggle="dropdown">Puesto
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                              <li><a href="#">Data Scientist</a></li>
-                              <li><a href="#">Data Engineer</a></li>
-                              <li><a href="#">QA Automation</a></li>
-                              <li><a href="#">Java Developer</a></li>
-                              <li><a href="#">.Net Developer</a></li>
-                              <li><a href="#">Fr Developer</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="buttonarea" style="float: left;">
-                          <h4>Idiomas</h4>
-                          <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle buttonsyle" type="button" data-toggle="dropdown">Idioma
+                        <h3 style="float: left;" ><b>Game</b></h3>
+                          <div class="dropdown" style="float: left;">
+                              <button class="btn btn-primary dropdown-toggle buttonsyle" type="button" data-toggle="dropdown">Play
                               <span class="caret"></span></button>
                               <ul class="dropdown-menu">
                               <li><a href="#">Español</a></li>
@@ -82,15 +59,7 @@
                               <li><a href="#">Alemán</a></li>
                               </ul>
                           </div>  
-                      </div>
-                      <div  style="float: right;">
-                          <input  type="submit" alt="submit" class="buttonsyle" value="Submit" >
-                    </div>
-                    </div>
-                      
-                    
-                </div>
-
+                  </div>
             </div>
           </div>
       </section>
@@ -98,39 +67,75 @@
       <section>
         <div class="container">
           <div class="row">
+            <div class="column101">
+              <h3 class="titlet">My Profile</h3>
+              <p> Basic information progress </p>
+              <div class="progress blue">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:87%;">
+                    <div class="progress-value">87%</div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <section>
+        <div class="container">
+          <div class="row">
             <div class="column100">
+              <h4 class="titlet">My Skills</h4>
               <table class="table table-striped">
                 <thead>
-                  <tr class="tablehead">
-                    <th scope="col">#</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">CV</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Puntuación</th>
+                  <tr class="tablehead ">
+                    <th scope="col">Skill</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Last Date</th>
+                    <th scope="col">Tried</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>100</td>
+                    <td>Java Script</td>
+                    <td>1/2 have done</td>
+                    <td>dd/mm/yy</td>
+                    <td>1</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>100</td>
+                    <td>Java Script</td>
+                    <td>1/2 have done</td>
+                    <td>dd/mm/yy</td>
+                    <td>1</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>100</td>
+                    <td>Java Script</td>
+                    <td>1/2 have done</td>
+                    <td>dd/mm/yy</td>
+                    <td>1</td>
                   </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="column100">
+              <table class="table table-striped aligncenter">
+                <thead>
+                  <tr class="tablehead ">
+                    <th scope="col">Tips</th>
+                    
+                </thead>
+                <tbody >
+                  <tr>
+                    <td>Java Script</td>
+
+                  </tr>
+                  
                 </tbody>
               </table>
             </div>
@@ -160,26 +165,81 @@
   <!--    Style-->
   <!-- ===============================================-->
   <style>
-      .buttonarea{
-          margin-top: 1rem;
-          margin-right: 6rem;
+
+      .progress{
+          height: 26px;
+          background: rgba(0,0,0,0.1);
+          border-radius: 0;
+          box-shadow: none;
+          margin-bottom: 40px;
+          overflow: visible;
+          position: relative;
+      }
+      .progress .progress-bar{
+          box-shadow: none;
+          border-radius: 0;
+          position: relative;
+          -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+          animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+      }
+      .progress-bar .progress-value{
+          width: 50px;
+          height: 100%;
+          background: black;
+          font-size: 15px;
+          font-weight: 600;
+          color: white;
+          position: absolute;
+          line-height: 27px;
+          top: 0;
+          left: 0;
+      }
+      .progress:after,
+      .progress .progress-bar:after,
+      .progress .progress-value:after{
+          content: "";
+          border-left: 13px solid rgba(0,0,0,0.1);
+          border-top: 13px solid transparent;
+          border-bottom: 13px solid transparent;
+          position: absolute;
+          top: 0;
+          right: -13px;
+      }
+      progress.color{
+        color: #03A6A6;
+      }
+      
+      .progress .progress-value:after{ border-left: 13px solid black; }
+      .progress.blue .progress-bar:after{ border-left-color: black; }
+    
+      @-webkit-keyframes animate-positive{
+          0%{ width: 0; }
+      }
+      @keyframes animate-positive{
+          0%{ width: 0; }
+        }
+
+      .titlet{
+        font-weight: bold;
       }
   
       .tablehead{
         background-color: #03A6A6;
         color: white;
       }
-
+      
+      
     .buttonsyle{
       background-color: #03A6A6;
       color: white;
       border-radius: 10px;
       border-color: white;
       font-size: 1.2rem;
-      padding: 7%;
+      padding: 5%;
+      margin-left:2rem;
       text-align: center;
       height: auto;
-      width: 150%;
+      width: 130%;
     }
     .titletext {
       font-size: 4vw;
@@ -221,6 +281,7 @@
     .column101{
       float: left;
       width: 100%;
+      margin-left: 1rem;
 
     }
 

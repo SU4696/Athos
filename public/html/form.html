@@ -80,8 +80,8 @@
 
     <section>
       <div class="container">
-        <div class="row">
-          <div class="column">
+        <div  id="wrap">
+          <div id="column1">
             <h4>Datos Personales</h4>
             <br>
             <h5>Nombre</h5>
@@ -93,7 +93,7 @@
             <h5>Fecha de Nacimiento</h5>
             <input id="FechaDeNacimiento" class="dpstyle" type="date" required>
           </div>
-          <div class="column aligncenter">
+          <div id="columns" >
             <input type=file name='file1' style='display: none;'>
             <img src="../assets/img/illustrations/3.png" width="60%" alt="perfilimg"
               onclick='document.all.file1.click(); document.all.file2.value=document.all.file1.value'>
@@ -107,8 +107,8 @@
 
     <section>
       <div class="container">
-        <div class="row">
-          <div class="column">
+        <div  id="wrap">
+          <div id="column1">
             <h4>Información de Contacto</h4>
             <br>
             <h5>Correo</h5>
@@ -118,7 +118,7 @@
             <h5>Dirección</h5>
             <input id="direccion" class="dpstyle" type="text" placeholder="Dirección">
           </div>
-          <div class="column">
+          <div id="column1">
             <h4>Formación Académica</h4>
             <br>
             <h5>Carrera</h5>
@@ -144,7 +144,7 @@
 
     <section>
       <div class="container">
-        <div class="row">
+        <div  id="wrap">
           <div class="column100">
             <h4>Experiencia Laboral</h4>
             <br>
@@ -171,8 +171,8 @@
 
     <section>
       <div class="container">
-        <div class="row">
-          <div class="column ">
+        <div id="wrap">
+          <div id="columns">
             <form>
               <h4>Idiomas</h4>
               <br>
@@ -185,7 +185,7 @@
             <form id="idioma"></form>
               <button onclick="CreateNewIdioma();"">Agregar Idioma</button>
           </div>
-          <div class="column">
+          <div id="columns">
             <form>
               <h4>Skills</h4>
               <br>
@@ -232,6 +232,45 @@
   <!--    Style-->
   <!-- ===============================================-->
   <style>
+     * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #column1 {
+          padding: 1rem;
+          float: left;
+          width: 50%;
+        }
+        #columns {
+          text-align: center;
+          padding: 1rem;
+          float: left;
+          width: 50%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #wrap{
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            #wrap{
+                width: 100%;
+            }
+            #column1, #columns {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+          #column1, #columns {
+                float: none;
+                width: 100%;
+            }
+        }
     .buttonsyle {
       background-color: #03A6A6;
       color: white;
@@ -272,9 +311,6 @@
       margin-bottom: 4rem;
     }
 
-    .aligncenter {
-      text-align: center;
-    }
 
     .subir {
       margin: 1rem;
@@ -300,12 +336,6 @@
       float: left;
       width: 25%;
 
-    }
-
-    .column {
-      padding: 1rem;
-      float: left;
-      width: 50%;
     }
 
     .roundbox {
